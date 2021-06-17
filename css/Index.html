@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Index.css">
+    <script src="Chart.js"></script>
+    <title>EXAMEN EXTRAORDINARIO</title>
+</head>
+<body>
+        <center>
+            <div>
+                <a href="Algo.html"><img src="al.png"width="13%"></a>
+                <a href="Py.html"><img src="py.png"width="13%"></a>
+                <a href="Index.html"><img src="pag.png"width="13%"></a>
+            </div>
+            <br>
+            <div id = "general">
+                <div style="width:25%;" id="Preguntas1">
+                    <canvas id="Pregunta1" width="400" height="300"></canvas>
+                </div>
+                <div style="width:25%;" id="Preguntas2">
+                    <canvas id="Pregunta2" width="400" height="300"></canvas>
+                </div>
+                
+            </div>
+            <div id="general2">
+                <div style="width:25%;" id="Preguntas3">
+                    <canvas id="Pregunta3" width="400" height="300"></canvas>
+                </div>
+                <div style="width:25%;" id="Preguntas4">
+                    <canvas id="Pregunta4" width="400" height="300"></canvas>
+                </div>
+            </div>
+            <div id="general3">
+                <div style="width:25%;" id="Preguntas5">
+                    <canvas id="Pregunta5" width="400" height="300"></canvas>
+                </div>
+                <div style="width:25%;" id="Preguntas6">
+                    <canvas id="Pregunta6" width="400" height="300"></canvas>
+                </div>
+            </div>
+            <div id="general4">
+                <div style="width:25%;" id="Preguntas7">
+                    <canvas id="Pregunta7" width="400" height="300"></canvas>
+                </div>
+                <div style="width:25%;" id="Preguntas8">
+                    <canvas id="Pregunta8" width="400" height="300"></canvas>
+                </div>
+            </div>
+            <div id="general5">
+                <div style="width:25%;" id="Preguntas9">
+                    <canvas id="Pregunta9" width="400" height="300"></canvas>
+                </div>
+                <div style="width:25%;" id="Preguntas10">
+                    <canvas id="Pregunta10" width="400" height="300"></canvas>
+                </div>
+            </div>
+            <div id="general6">
+                <div style="width:25%;" id="Preguntas11">
+                    <canvas id="Pregunta11" width="400" height="300"></canvas>
+                </div>
+                <div style="width:25%;" id="Preguntas12">
+                    <canvas id="Pregunta12" width="400" height="300"></canvas>
+                </div>
+            </div>
+            <div id="general7">
+                <div style="width:25%;" id="Preguntas13">
+                    <canvas id="Pregunta13" width="400" height="300"></canvas>
+                </div>
+                <div style="width:25%;" id="Preguntas14">
+                    <canvas id="Pregunta14" width="400" height="300"></canvas>
+                </div>
+            </div>
+            <div id="general8">
+                <div style="width:25%;" id="Preguntas15">
+                    <canvas id="Pregunta15" width="400" height="300"></canvas>
+                </div>
+            </div>
+        </center>
+        
+</body>
+<script>
+    let miCanvas=document.getElementById("Pregunta1").getContext("2d");
+	var chart = new Chart(miCanvas,{
+		type:"bar",
+		data:{
+			labels:['15','16','17','18'],
+			datasets:[{
+				label:"Edad",
+				backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(255, 159, 64, 0.2)',
+                  'rgba(255, 205, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)'
+                ],
+                borderColor: [
+                  'rgb(255, 99, 132)',
+                  'rgb(255, 159, 64)',
+                  'rgb(255, 205, 86)',
+                  'rgb(75, 192, 192)'
+                ],
+                fill:true,
+				data:[2,4,10,35]
+                }]
+		}
+	})
+    
+let miCanvas2=document.getElementById("Pregunta2").getContext("2d");
+	var chart = new Chart(miCanvas2,{
+		type:"bar",
+		data:{
+			labels:['Masculino','Femenino'],
+			datasets:[{
+				label:"Sexo",
+				backgroundColor: [
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(201, 203, 207, 0.2)'
+                ],
+                borderColor: [
+                  'rgb(153, 102, 255)',
+                  'rgb(201, 203, 207)'
+                ],
+                fill:true,
+				data:[31,20]
+                }]
+		}
+	})
+let miCanvas3=document.getElementById("Pregunta3").getContext("2d");
+	var chart = new Chart(miCanvas3,{
+		type:"bar",
+		data:{
+			labels:['Kinestesico','Visual','Auditivo'],
+			datasets:[{
+				label:"Tipo de aprendizaje",
+				backgroundColor: [
+                    'rgba(54, 162, 235, 0.2)',
+                  'rgba(105, 23, 20, 0.2)',
+                  'rgba(153, 102, 255, 0.2)'
+                ],
+                borderColor: [
+                'rgb(54, 162, 235)',
+                  'rgb(153, 102, 255)',
+                  'rgb(201, 203, 207)'
+                ],
+                fill:true,
+				data:[20,19,12]
+                }]
+		}
+	})
+let miCanvas4=document.getElementById("Pregunta4").getContext("2d");
+	var chart = new Chart(miCanvas4,{
+		type:"bar",
+		data:{
+			labels:['1','2','3','4'],
+			datasets:[{
+				label:"Horas semanales estudio",
+				backgroundColor: [
+                    'rgba(255, 159, 64, 0.2)',
+                      'rgba(255, 205, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(54, 162, 235, 0.2)'
+                ],
+                borderColor: [
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)'
+                ],
+                fill:true,
+				data:[15,11,19,6]
+                }]
+		}
+	})
+let miCanvas5=document.getElementById("Pregunta5").getContext("2d");
+	var chart = new Chart(miCanvas5,{
+		type:"bar",
+		data:{
+			labels:['1','2','3','4'],
+			datasets:[{
+				label:"Horas semanales ocio",
+				backgroundColor: [
+                    'rgba(255, 159, 64, 0.2)',
+                      'rgba(255, 205, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(54, 162, 235, 0.2)'
+                ],
+                borderColor: [
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)'
+                ],
+                fill:true,
+				data:[4,12,19,16]
+                }]
+		}
+	})
+let miCanvas6=document.getElementById("Pregunta6").getContext("2d");
+	var chart = new Chart(miCanvas6,{
+		type:"bar",
+		data:{
+			labels:['6','7','8','9','10'],
+			datasets:[{
+				label:"Algebra",
+				backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                      'rgba(255, 205, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(54, 162, 235, 0.2)'
+                ],
+                borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)'
+                ],
+                fill:true,
+				data:[8,9,16,13,5]
+                }]
+		}
+	})
+let miCanvas7=document.getElementById("Pregunta7").getContext("2d");
+	var chart = new Chart(miCanvas7,{
+		type:"bar",
+		data:{
+			labels:['6','7','8','9','10'],
+			datasets:[{
+				label:"Trigonometria",
+				backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                      'rgba(255, 205, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(54, 162, 235, 0.2)'
+                ],
+                borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)'
+                ],
+                fill:true,
+				data:[7,12,12,17,3]
+                }]
+		}
+	})
+let miCanvas8=document.getElementById("Pregunta8").getContext("2d");
+	var chart = new Chart(miCanvas8,{
+		type:"bar",
+		data:{
+			labels:['6','7','8','9','10'],
+			datasets:[{
+				label:"Analitica",
+				backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                      'rgba(255, 205, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(54, 162, 235, 0.2)'
+                ],
+                borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)'
+                ],
+                fill:true,
+				data:[8,12,13,12,4]
+                }]
+		}
+	})
+let miCanvas9=document.getElementById("Pregunta9").getContext("2d");
+	var chart = new Chart(miCanvas9,{
+		type:"bar",
+		data:{
+			labels:['6','7','8','9','10'],
+			datasets:[{
+				label:"Diferencial",
+				backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                      'rgba(255, 205, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(54, 162, 235, 0.2)'
+                ],
+                borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)'
+                ],
+                fill:true,
+				data:[8,10,12,12,6]
+                }]
+		}
+	})
+let miCanvas10=document.getElementById("Pregunta10").getContext("2d");
+	var chart = new Chart(miCanvas10,{
+		type:"bar",
+		data:{
+			labels:['6','7','8','9','10'],
+			datasets:[{
+				label:"Integral",
+				backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                      'rgba(255, 205, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(54, 162, 235, 0.2)'
+                ],
+                borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)'
+                ],
+                fill:true,
+				data:[9,10,7,17,1]
+                }]
+		}
+	})
+let miCanvas11=document.getElementById("Pregunta11").getContext("2d");
+	var chart = new Chart(miCanvas11,{
+		type:"bar",
+		data:{
+			labels:['Primera Vez','Recurse'],
+			datasets:[{
+				label:"Algebra",
+				backgroundColor: [
+                    'rgba(191, 49, 0, 0.4)',
+                    'rgba(65, 103, 136, 0.2)'
+                ],
+                borderColor: [
+                'rgb(191, 49, 0)',
+                'rgb(65, 103, 136)'
+                ],
+                fill:true,
+				data:[49,2]
+                }]
+		}
+	})
+let miCanvas12=document.getElementById("Pregunta12").getContext("2d");
+	var chart = new Chart(miCanvas12,{
+		type:"bar",
+		data:{
+			labels:['Primera Vez','Recurse'],
+			datasets:[{
+				label:"Trigo",
+				backgroundColor: [
+                    'rgba(191, 49, 0, 0.4)',
+                    'rgba(65, 103, 136, 0.2)'
+                ],
+                borderColor: [
+                'rgb(191, 49, 0)',
+                'rgb(65, 103, 136)'
+                ],
+                fill:true,
+				data:[49,2]
+                }]
+		}
+	})
+let miCanvas13=document.getElementById("Pregunta13").getContext("2d");
+	var chart = new Chart(miCanvas13,{
+		type:"bar",
+		data:{
+			labels:['Primera Vez','Recurse'],
+			datasets:[{
+				label:"Analitica",
+				backgroundColor: [
+                    'rgba(191, 49, 0, 0.4)',
+                    'rgba(65, 103, 136, 0.2)'
+                ],
+                borderColor: [
+                'rgb(191, 49, 0)',
+                'rgb(65, 103, 136)'
+                ],
+                fill:true,
+				data:[47,4]
+                }]
+		}
+	})
+let miCanvas14=document.getElementById("Pregunta14").getContext("2d");
+	var chart = new Chart(miCanvas14,{
+		type:"bar",
+		data:{
+			labels:['Primera Vez','Recurse'],
+			datasets:[{
+				label:"Diferencial",
+				backgroundColor: [
+                    'rgba(191, 49, 0, 0.4)',
+                    'rgba(65, 103, 136, 0.2)'
+                ],
+                borderColor: [
+                'rgb(191, 49, 0)',
+                'rgb(65, 103, 136)'
+                ],
+                fill:true,
+				data:[46,5]
+                }]
+		}
+	})
+let miCanvas15=document.getElementById("Pregunta15").getContext("2d");
+	var chart = new Chart(miCanvas15,{
+		type:"bar",
+		data:{
+			labels:['Primera Vez','Recurse'],
+			datasets:[{
+				label:"Integral",
+				backgroundColor: [
+                    'rgba(191, 49, 0, 0.4)',
+                    'rgba(65, 103, 136, 0.2)'
+                ],
+                borderColor: [
+                'rgb(191, 49, 0)',
+                'rgb(65, 103, 136)'
+                ],
+                fill:true,
+				data:[45,6]
+                }]
+		}
+	})
+</script>
+</html>
