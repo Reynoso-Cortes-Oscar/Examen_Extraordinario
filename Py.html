@@ -1,19 +1,50 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Py.css">
+    <script src="Chart.js"></script>
     <title>EXAMEN EXTRAORDINARIO</title>
 </head>
 <body>
-    <div>
-        <a href="Algo.html"><img src="al.png"width="13%"></a>
-        <img src="sep.png" width="8%>
-        <a href="Py.html"><img src="py.png"width="13%"></a>
-        <img src="sep.png" width="8%">
-        <a href="Index.html"><img src="pag.png"width="13%"></a>
-    </div>
+        <center>
+            <div>
+                <a href="Algo.html"><img src="al.png"width="13%"></a>
+                <a href="Py.html"><img src="py.png"width="13%"></a>
+                <a href="Index.html"><img src="pag.png"width="13%"></a>
+            </div>
+            <br>
+            <div style="width:40%;">
+                <canvas id="GraficaPY" width="400" height="300"></canvas>
+            <p style = "font-family:courier,arial,helvetica;">Despues de haber analizado de manera detenida la informacion que recopilamos de nuestras encuestas decidimos emplear los arboles de regresion
+            para predecir si un alumno aprobara la materia de probabilidad y estadistica tomando como base las demas respuestas que este proporciono en la encuesta
+            </p>
+            </div>
+        </center>
+        
 </body>
+<script>
+    let Canvas=document.getElementById("GraficaPY").getContext("2d");
+	var chart = new Chart(GraficaPY,{
+		type:"bar",
+		data:{
+			labels:['Aprobatoria','Reprobatoria'],
+			datasets:[{
+				label:"Prediccion de Personas que pasaran la materia de PyE",
+				backgroundColor:"rgb(234,214,55)",
+				borderColor:"rgb(255,255,255)",
+                fill:true,
+				data:[45,6]
+                }]
+		}
+	})
+
+
+
+
+
+</script>
 </html>
